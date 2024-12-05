@@ -1,0 +1,94 @@
+/* General styling (same as before) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .category, .income-section, .date-range {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  input[type="number"], input[type="date"] {
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .total {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .total p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  button.clear {
+    background-color: #dc3545;
+  }
+  
+  button.clear:hover {
+    background-color: #c82333;
+  }
+  
+  /* Additional styling for income section */
+  .income-section {
+    background-color: #e6f7ff;
+    border-color: #b3e0ff;
+  }
+  
+  .income-section h3 {
+    color: #007bff;
+  }
+  
+  /* Styling for date range */
+  .date-range {
+    background-color: #fdf6e4;
+    border-color: #fae5bc;
+  }
+  

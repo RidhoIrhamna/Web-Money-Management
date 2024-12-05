@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Simple Money Management</h1>
+
+  <div class="date-range">
+    <h3>Pilih Rentang Waktu</h3>
+    <input type="date" id="startDate" value="">
+    <input type="date" id="endDate" value="">
+    <button onclick="filterByDate()">Filter</button>
+  </div>
+
+  <div class="income-section">
+    <h3>Pemasukan</h3>
+    <input type="number" id="income" placeholder="Masukkan pemasukan">
+    <input type="date" id="incomeDate" value="">
+    <button onclick="addIncome()">Tambahkan</button>
+    <p>Total Pemasukan: <span id="totalIncome">0</span></p>
+  </div>
+
+  <div class="category">
+    <h3>Primer</h3>
+    <input type="number" id="primer" placeholder="Anggaran pengeluaran primer">
+    <input type="date" id="primerDate" value="">
+    <button onclick="addExpense('primer')">Tambahkan</button>
+    <p>Total Anggaran Primer harian: <span id="totalPrimer">0</span></p>
+  </div>
+
+  <div class="category">
+    <h3>Sekunder</h3>
+    <input type="number" id="sekunder" placeholder="Anggaran pengeluaran sekunder">
+    <input type="date" id="sekunderDate" value="">
+    <button onclick="addExpense('sekunder')">Tambahkan</button>
+    <p>Total Anggaran Sekunder: <span id="totalSekunder">0</span></p>
+  </div>
+
+  <div class="category">
+    <h3>Tersier</h3>
+    <input type="number" id="tersier" placeholder="Anggaran pengeluaran tersier">
+    <input type="date" id="tersierDate" value="">
+    <button onclick="addExpense('tersier')">Tambahkan</button>
+    <p>Total Anggaran Tersier: <span id="totalTersier">0</span></p>
+  </div>
+
+  <div class="total">
+    <p>Total Pengeluaran: <span id="totalExpense">0</span></p>
+    <p>Total Pemasukan: <span id="totalIncomeFooter">0</span></p>
+    <p>Saldo: <span id="balance">0</span></p>
+  </div>
+
+  <button class="clear" onclick="clearData()">Hapus Semua Data</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
